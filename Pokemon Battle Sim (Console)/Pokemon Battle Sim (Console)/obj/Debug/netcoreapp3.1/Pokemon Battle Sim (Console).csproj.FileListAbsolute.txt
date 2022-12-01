@@ -1,0 +1,25 @@
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).exe
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).deps.json
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).runtimeconfig.json
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).runtimeconfig.dev.json
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).pdb
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).AssemblyInfoInputs.cache
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).AssemblyInfo.cs
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).pdb
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).genruntimeconfig.cache
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\HtmlAgilityPack.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).csproj.CoreCompileInputs.cache
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).csproj.CopyComplete
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Aspose.Imaging.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).csproj.AssemblyReference.cache
+C:\Users\Spruc\OneDrive\Desktop\Pokemon Battle Simulator\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\netcoreapp3.1\Pokemon Battle Sim (Console).GeneratedMSBuildEditorConfig.editorconfig

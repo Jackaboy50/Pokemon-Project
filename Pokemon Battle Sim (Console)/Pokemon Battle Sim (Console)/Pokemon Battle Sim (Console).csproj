@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>.net6.0</TargetFramework>
+    <RootNamespace>Pokemon_Battle_Sim__Console_</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Imaging" Version="22.3.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.41" />
+  </ItemGroup>
+
+</Project>

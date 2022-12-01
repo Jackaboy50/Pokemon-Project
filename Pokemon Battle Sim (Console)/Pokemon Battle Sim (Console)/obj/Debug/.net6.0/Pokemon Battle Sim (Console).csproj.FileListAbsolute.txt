@@ -1,0 +1,46 @@
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).exe
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).deps.json
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).runtimeconfig.json
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).pdb
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Aspose.Imaging.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\HtmlAgilityPack.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Microsoft.Win32.SystemEvents.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\System.Drawing.Common.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).csproj.AssemblyReference.cache
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).GeneratedMSBuildEditorConfig.editorconfig
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).AssemblyInfoInputs.cache
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).AssemblyInfo.cs
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).csproj.CoreCompileInputs.cache
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).csproj.CopyComplete
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\refint\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).pdb
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).genruntimeconfig.cache
+D:\jackt\Documents\Important Things\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\ref\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).exe
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).deps.json
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).runtimeconfig.json
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Pokemon Battle Sim (Console).pdb
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Aspose.Imaging.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\HtmlAgilityPack.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Microsoft.Win32.SystemEvents.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\System.Drawing.Common.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).csproj.AssemblyReference.cache
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).GeneratedMSBuildEditorConfig.editorconfig
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).AssemblyInfoInputs.cache
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).AssemblyInfo.cs
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).csproj.CoreCompileInputs.cache
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).csproj.CopyComplete
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\refint\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).pdb
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).genruntimeconfig.cache
+D:\jackt\Documents\Coding Stuffs\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\ref\Pokemon Battle Sim (Console).dll
