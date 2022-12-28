@@ -80,27 +80,9 @@ public class PokemonButtonScript : MonoBehaviour
 
                         TeamCanvas.enabled = false;
                         Back.SendMessage("Push", TeamCanvas);
-                        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetSlotNum(TeamSlotNumber);
-                        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetName(P.ReturnName());
-                        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetPokemon(P);
-                        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetPokemon(P);
-                        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetImage(Pokemon.texture);
-                        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetController(transform.parent.Find("TeamController").GetComponent<TeamCanvasController>());
-                        
-
-                        Instantiate(PokemonStatCanvas, new Vector3(0, 0, 0), Quaternion.identity);
-                        GameObject.Find("[Name]StatCanvas(Clone)").GetComponent<Canvas>().enabled = false;
-                        GameObject.Find("[Name]StatCanvas(Clone)").transform.Find("StatController").GetComponent<StatControllerScript>().SetBasestats(P.ReturnBaseStats());
-                        GameObject.Find("[Name]StatCanvas(Clone)").transform.Find("StatController").GetComponent<StatControllerScript>().SetName(P.ReturnName());
-                        GameObject.Find("[Name]StatCanvas(Clone)").transform.Find("StatController").GetComponent<StatControllerScript>().SetImage(Pokemon.texture);
-
-
-
-                        Instantiate(PokemonMovesetCanvas, new Vector3(0, 0, 0), Quaternion.identity);
-                        GameObject.Find("[Name]MovesetCanvas(Clone)").GetComponent<Canvas>().enabled = false;
-                        GameObject.Find("[Name]MovesetCanvas(Clone)").transform.Find("MovesetController").GetComponent<MovesetControllerScript>().SetName(P.ReturnName());
-                        GameObject.Find("[Name]MovesetCanvas(Clone)").transform.Find("MovesetController").GetComponent<MovesetControllerScript>().SetImage(Pokemon.texture);
-
+                        InformPokemonController();
+                        InstantiateStatCanvas();
+                        InstantiateMovesetCanvas();
                         GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("left").GetComponent<MenuCycler>().SetCanvasses(new Canvas[] { GameObject.Find("[Name]PokemonCanvas(Clone)").GetComponent<Canvas>(), GameObject.Find("[Name]StatCanvas(Clone)").GetComponent<Canvas>(), GameObject.Find("[Name]MovesetCanvas(Clone)").GetComponent<Canvas>() });
                         GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("right").GetComponent<MenuCycler>().SetCanvasses(new Canvas[] { GameObject.Find("[Name]PokemonCanvas(Clone)").GetComponent<Canvas>(), GameObject.Find("[Name]StatCanvas(Clone)").GetComponent<Canvas>(), GameObject.Find("[Name]MovesetCanvas(Clone)").GetComponent<Canvas>() });
                         GameObject.Find("[Name]PokemonCanvas(Clone)").transform.name = $"Slot:{TeamSlotNumber}_Canvas";
@@ -142,5 +124,32 @@ public class PokemonButtonScript : MonoBehaviour
         transform.Find("Name").gameObject.SetActive(true);
         transform.Find("NameChanger").transform.Find("Text Area").transform.Find("Text").GetComponent<TextMeshProUGUI>().text = "Enter Pokemon Name...";
         HasPokemon = true;
+    }
+
+    public void InformPokemonController()
+    {
+        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetSlotNum(TeamSlotNumber);
+        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetName(P.ReturnName());
+        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetPokemon(P);
+        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetPokemon(P);
+        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetImage(Pokemon.texture);
+        GameObject.Find("[Name]PokemonCanvas(Clone)").transform.Find("PokemonController").GetComponent<PokemonController>().SetController(transform.parent.Find("TeamController").GetComponent<TeamCanvasController>());
+    }
+
+    public void InstantiateStatCanvas()
+    {
+        Instantiate(PokemonStatCanvas, new Vector3(0, 0, 0), Quaternion.identity);
+        GameObject.Find("[Name]StatCanvas(Clone)").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("[Name]StatCanvas(Clone)").transform.Find("StatController").GetComponent<StatControllerScript>().SetBasestats(P.ReturnBaseStats());
+        GameObject.Find("[Name]StatCanvas(Clone)").transform.Find("StatController").GetComponent<StatControllerScript>().SetName(P.ReturnName());
+        GameObject.Find("[Name]StatCanvas(Clone)").transform.Find("StatController").GetComponent<StatControllerScript>().SetImage(Pokemon.texture);
+    }
+
+    public void InstantiateMovesetCanvas()
+    {
+        Instantiate(PokemonMovesetCanvas, new Vector3(0, 0, 0), Quaternion.identity);
+        GameObject.Find("[Name]MovesetCanvas(Clone)").GetComponent<Canvas>().enabled = false;
+        GameObject.Find("[Name]MovesetCanvas(Clone)").transform.Find("MovesetController").GetComponent<MovesetControllerScript>().SetName(P.ReturnName());
+        GameObject.Find("[Name]MovesetCanvas(Clone)").transform.Find("MovesetController").GetComponent<MovesetControllerScript>().SetImage(Pokemon.texture);
     }
 }

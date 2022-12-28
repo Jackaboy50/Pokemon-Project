@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\jackt\\Documents\\Coding Stuffs\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj": {}
+    "D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj": {}
   },
   "projects": {
-    "D:\\jackt\\Documents\\Coding Stuffs\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj": {
+    "D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\jackt\\Documents\\Coding Stuffs\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj",
+        "projectUniqueName": "D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj",
         "projectName": "Pokemon Battle Sim (Console)",
-        "projectPath": "D:\\jackt\\Documents\\Coding Stuffs\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj",
+        "projectPath": "D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj",
         "packagesPath": "C:\\Users\\jackt\\.nuget\\packages\\",
-        "outputPath": "D:\\jackt\\Documents\\Coding Stuffs\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\obj\\",
+        "outputPath": "D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jackt\\AppData\\Roaming\\NuGet\\NuGet.Config",

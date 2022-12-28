@@ -157,7 +157,6 @@ namespace Classes
             string imageref = baseurl + $"art/{dexnum}.png";
             return imageref;
         }
-
         public static string GetPokemonShowdownGifRef(string PKMN, bool shiny, bool back)
         {
             string url = "https://play.pokemonshowdown.com/sprites/";
@@ -198,7 +197,6 @@ namespace Classes
             }
             return BaseStats;
         }
-
         public static string GetType1Name(string PKMN)
         {
             string baseurl = "https://pokemondb.net/pokedex/";
@@ -209,7 +207,6 @@ namespace Classes
             string TypeName = node.InnerText.ToString();
             return TypeName;
         }
-
         public static string GetType2Name(string PKMN)
         {
             string baseurl = "https://pokemondb.net/pokedex/";
@@ -224,7 +221,6 @@ namespace Classes
             }
             return "Pokemon has no Second Type";
         }
-
         public static Move GetMove(string move)
         {
             Functions fn = new Functions();
@@ -267,7 +263,6 @@ namespace Classes
             string MoveInfo = moveName + " " + node6.InnerText.ToString().TrimStart();
             return new Move(moveName, T, MoveInfo, BaseDamage, AttackType, PP, Accuracy);
         }
-
         public static string GetDexNum(string PKMN)
         {
             Functions fn = new Functions();
@@ -279,7 +274,6 @@ namespace Classes
             string dexnum = node.InnerText;
             return dexnum;
         }
-
         public static Pokemon GetPokemon(string PKMN)
         {
             Functions fn = new Functions();
