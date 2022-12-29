@@ -156,7 +156,7 @@ Electabuzz
 Magmar
 Pinsir
 Tauros
-PaldeanTauros
+Tauros P
 Magikarp
 Gyarados
 Lapras
@@ -179,8 +179,8 @@ Zapdos G
 Moltres
 Moltres G
 Dratini
-air
-ite
+Dragonair
+Dragonite
 Mewtwo
 Mew
 Chikorita
@@ -227,7 +227,7 @@ Sunkern
 Sunflora
 Yanma
 Wooper
-PaldeanWooper
+Wooper P
 Quagsire
 Espeon
 Umbreon
@@ -347,7 +347,7 @@ Aggron
 Meditite
 Medicham
 Electrike
-Manectrlectric
+Manectric
 Plusle
 Minun
 Volbeat
@@ -375,7 +375,7 @@ Altaria
 Zangoose
 Seviper
 Lunatone
-Sol
+Solrock
 Barboach
 Whiscash
 Corphish
@@ -414,9 +414,9 @@ Salamence
 Beldum
 Metang
 Metagross
-Regi
-Reg
-Regi
+Regirock
+Regice
+Registeel
 Latias
 Latios
 Kyogre
@@ -528,7 +528,7 @@ Giratina
 Cresselia
 Phione
 Manaphy
-rai
+Darkrai
 Shaymin
 Arceus
 Victini
@@ -637,7 +637,7 @@ Escavalier
 Foongus
 Amoonguss
 Frillish
-Jellnt
+Jellicent
 Alomomola
 Joltik
 Galvantula
@@ -709,7 +709,7 @@ Diggersby
 Fletchling
 Fletchinder
 Talonflame
-Scatter
+Scatterbug
 Spewpa
 Vivillon
 Litleo
@@ -786,7 +786,7 @@ Toucannon
 Yungoos
 Gumshoos
 Grubbin
-Charja
+Charjabug
 Vikavolt
 Crabrawler
 Crabominable
@@ -846,7 +846,7 @@ Nihilego
 Buzzwole
 Pheromosa
 Xurkitree
-Celeasteel
+Celesteela
 Kartana
 Guzzlord
 Necrozma

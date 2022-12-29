@@ -3,6 +3,7 @@ using HtmlAgilityPack;
 using System.Collections.Generic;
 using Pokemon_Battle_Sim__Console_;
 using System.IO;
+using Newtonsoft.Json;
 
 class Program
 {
@@ -11,10 +12,11 @@ class Program
     static void Main(string[] args)
     {
         fn.GenTypes();
-        WriteToFile();
+        List<Pokemon> allPokemon = JsonConvert.DeserializeObject<List<Pokemon>>(File.ReadAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\PokemonClassData.json"));
+        Console.WriteLine("done");
     }
 
-    public static void WriteToFile()
+    public static void WriteToTxtFile()
     {
         var lines = File.ReadLines("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonNames.txt");
         StreamWriter writer = new StreamWriter("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonClassData.txt");
@@ -22,11 +24,21 @@ class Program
         {
             Console.WriteLine(line);
             Pokemon temp = WebScraper.GetPokemon(line);
-
-            writer.WriteLine($"|{temp.ReturnDexNum()}|{temp.ReturnName()}|{temp.ReturnType1().ReturnName()}|{(temp.ReturnType2() != null ? temp.ReturnType2().ReturnName() : " ")}|{temp.ReturnBaseStats()[0]}|{temp.ReturnBaseStats()[1]}|{temp.ReturnBaseStats()[2]}|{temp.ReturnBaseStats()[3]}|{temp.ReturnBaseStats()[4]}|{temp.ReturnBaseStats()[5]}|");
-
+            writer.WriteLine($"|{temp.ReturnDexNum()}|{temp.ReturnName()}|{temp.ReturnType1()}|{(temp.ReturnType2() != null ? temp.ReturnType2() : " ")}|{temp.ReturnBaseStats()[0]}|{temp.ReturnBaseStats()[1]}|{temp.ReturnBaseStats()[2]}|{temp.ReturnBaseStats()[3]}|{temp.ReturnBaseStats()[4]}|{temp.ReturnBaseStats()[5]}|");
         }
         writer.Close();
+    }
+
+    public static void WriteToJsonFile()
+    {
+        var lines = File.ReadLines("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonNames.txt");
+        List<Pokemon> allPokemon = new List<Pokemon>();
+        foreach (var line in lines)
+        {
+            Console.WriteLine(line);
+            allPokemon.Add(WebScraper.GetPokemon(line));
+        }
+        File.WriteAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\PokemonClassData.json", JsonConvert.SerializeObject(allPokemon, Formatting.Indented));
     }
     public static void CreateRandomTeam()
     {
@@ -103,16 +115,4 @@ class Program
             Console.WriteLine(s);
         }
     }
-
-    
 }
-
-
-
-
-
-
-
-
-
-

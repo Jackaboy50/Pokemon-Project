@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace Pokemon_Battle_Sim__Console_
 {
@@ -919,5 +918,6 @@ namespace Pokemon_Battle_Sim__Console_
         {
             return (int)Math.Round((((((2 * Level) / 5) + 2) * BasePower * (Attack / Defense) / 50) + 2) * WeatherMultiplier * CriticalMultiplier * STABMultiplier * RandomRange * Typeeffectiveness * BurnModifier * MiscModifier);
         }
+
     }
 }

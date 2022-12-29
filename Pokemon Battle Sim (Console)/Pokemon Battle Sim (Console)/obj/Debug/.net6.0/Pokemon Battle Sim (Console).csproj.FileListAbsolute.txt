@@ -67,3 +67,4 @@ D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle S
 D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).pdb
 D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\Pokemon Battle Sim (Console).genruntimeconfig.cache
 D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\obj\Debug\.net6.0\ref\Pokemon Battle Sim (Console).dll
+D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\bin\Debug\.net6.0\Newtonsoft.Json.dll

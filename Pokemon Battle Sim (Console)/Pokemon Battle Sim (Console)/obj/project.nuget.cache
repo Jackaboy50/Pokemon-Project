@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "uztHDS0mjndpv1fXnNYu/EDNiXIjSJMqezLCq2fYuayvQZPAP4BigXr05WqDNXLp9x5rqaaLcBmli3DfWRrpmg==",
+  "dgSpecHash": "T6guUhxDMvCYngV0plPAzgwSa8wPVVLffyIQlI/y8NvOmrNMqZhv8c+yM53q5jHTu6PF+iMJISEYZ6WT0MroYw==",
   "success": true,
   "projectFilePath": "D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console).csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\jackt\\.nuget\\packages\\htmlagilitypack\\1.11.41\\htmlagilitypack.1.11.41.nupkg.sha512",
     "C:\\Users\\jackt\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\jackt\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\jackt\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\jackt\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
     "C:\\Users\\jackt\\.nuget\\packages\\system.text.encoding.codepages\\5.0.0\\system.text.encoding.codepages.5.0.0.nupkg.sha512"
   ],
