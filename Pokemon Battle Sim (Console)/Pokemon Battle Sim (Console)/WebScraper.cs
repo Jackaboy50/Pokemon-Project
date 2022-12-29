@@ -231,15 +231,14 @@ namespace Pokemon_Battle_Sim__Console_
             }
 
             var node4 = doc.DocumentNode.SelectSingleNode("/html/body/main/div[1]/div[1]/table/tbody/tr[5]/td/text()");
-            string tempPP = (node4.InnerText.ToString());
-            int PP = int.Parse(tempPP.Substring(0, tempPP.IndexOf(" ")));
-            var node5 = doc.DocumentNode.SelectSingleNode("/html/body/main/div[1]/div[1]/table/tbody/tr[4]/td");
-            if (node5.InnerText.ToString() != "∞" && node5.InnerText.ToString() != "—")
+            string tempPP = node4.InnerText.ToString();
+            int PP = -1;
+            if(!tempPP.Contains("—"))
             {
-                Accuracy = int.Parse(node5.InnerText.ToString());
+                PP = int.Parse(tempPP.Substring(0, tempPP.IndexOf(" ")));
             }
-
-
+            var node5 = doc.DocumentNode.SelectSingleNode("/html/body/main/div[1]/div[1]/table/tbody/tr[4]/td");
+            int.TryParse(node5.InnerText.ToString(), out Accuracy);
             var node7 = doc.DocumentNode.SelectSingleNode("/html/body/main/h1/text()");
             string moveName = node7.InnerText.ToString().Trim();
             var node6 = doc.DocumentNode.SelectSingleNode("/html/body/main/div[1]/div[2]/p/text()");

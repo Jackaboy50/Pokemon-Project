@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using Pokemon_Battle_Sim__Console_;
 using System.IO;
 using Newtonsoft.Json;
+using System.Linq;
+using System.Xml.Linq;
 
 class Program
 {
@@ -12,8 +14,6 @@ class Program
     static void Main(string[] args)
     {
         fn.GenTypes();
-        List<Pokemon> allPokemon = JsonConvert.DeserializeObject<List<Pokemon>>(File.ReadAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\PokemonClassData.json"));
-        Console.WriteLine("done");
     }
 
     public static void WriteToTxtFile()
@@ -29,7 +29,7 @@ class Program
         writer.Close();
     }
 
-    public static void WriteToJsonFile()
+    public static void WritePokemonToJsonFile()
     {
         var lines = File.ReadLines("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonNames.txt");
         List<Pokemon> allPokemon = new List<Pokemon>();
@@ -39,6 +39,18 @@ class Program
             allPokemon.Add(WebScraper.GetPokemon(line));
         }
         File.WriteAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\PokemonClassData.json", JsonConvert.SerializeObject(allPokemon, Formatting.Indented));
+    }
+
+    public static void WriteMovesToJsonFile()
+    {
+        var lines = File.ReadLines("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\MoveNames.txt");
+        List<Move> allMoves = new List<Move>();
+        foreach (var line in lines)
+        {
+            Console.WriteLine(line);
+            allMoves.Add(WebScraper.GetMove(line));
+        }
+        File.WriteAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\MoveClassData.json", JsonConvert.SerializeObject(allMoves, Formatting.Indented));
     }
     public static void CreateRandomTeam()
     {

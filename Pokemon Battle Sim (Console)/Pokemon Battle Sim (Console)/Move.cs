@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Pokemon_Battle_Sim__Console_
 {
     public class Move
     {
-        private string Name;
+        private Functions fn = new Functions();
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private string Name;
         private PType Type;
-        private string Info;
-        private int BaseDamage;
-        private string AttackType;
-        private int PP;
-        private int Accuracy;
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private string TypeName;
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private string Info;
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private int BaseDamage;
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private string AttackType;
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private int PP;
+        [JsonProperty(NullValueHandling = NullValueHandling.Ignore)][JsonRequired] private int Accuracy;
 
         public Move(string n, PType T, string I, int BD, string AT, int P, int a)
         {
@@ -25,6 +28,16 @@ namespace Pokemon_Battle_Sim__Console_
             PP = P;
             Info = I;
             Accuracy = a;
+        }
+
+        [JsonConstructor] public Move()
+        {
+
+        }
+
+        public void SetType()
+        {
+            Type = fn.FindType(TypeName);
         }
 
         public int ReturnPP()
