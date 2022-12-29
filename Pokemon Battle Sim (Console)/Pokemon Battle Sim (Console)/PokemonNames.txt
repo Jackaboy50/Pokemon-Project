@@ -17,15 +17,20 @@ Pidgey
 Pidgeotto
 Pidgeot
 Rattata
+Rattata A
 Raticate
+Raticate A
 Spearow
 Fearow
 Ekans
 Arbok
 Pikachu
 Raichu
+Raichu A
 Sandshrew
+Sandshrew A
 Sandslash
+Sandslash A
 Nidoran-f
 Nidorina
 Nidoqueen
@@ -35,7 +40,9 @@ Nidoking
 Clefairy
 Clefable
 Vulpix
+Vulpix A
 Ninetales
+Ninetales A
 Jigglypuff
 Wigglytuff
 Zubat
@@ -48,15 +55,22 @@ Parasect
 Venonat
 Venomoth
 Diglett
+Diglett A
 Dugtrio
+Dugtrio A
 Meowth
+Meowth A
+Meowth G
 Persian
+Persian A
 Psyduck
 Golduck
 Mankey
 Primeape
 Growlithe
+Growlithe H
 Arcanine
+Arcanine H
 Poliwag
 Poliwhirl
 Poliwrath
@@ -72,21 +86,31 @@ Victreebel
 Tentacool
 Tentacruel
 Geodude
+Geodude A
 Graveler
+Graveler A
 Golem
+Golem A
 Ponyta
+Ponyta G
 Rapidash
+Rapidash G
 Slowpoke
+Slowpoke G
 Slowbro
+Slowbro G
 Magnemite
 Magneton
-Farfetch’d
+Farfetchd
+Farfetchd G
 Doduo
 Dodrio
 Seel
 Dewgong
 Grimer
+Grimer A
 Muk
+Muk A
 Shellder
 Cloyster
 Gastly
@@ -98,16 +122,21 @@ Hypno
 Krabby
 Kingler
 Voltorb
+Voltorb H
 Electrode
+Electrode H
 Exeggcute
 Exeggutor
+Exeggutor A
 Cubone
 Marowak
+Marowak A
 Hitmonlee
 Hitmonchan
 Lickitung
 Koffing
 Weezing
+Weezing G
 Rhyhorn
 Rhydon
 Chansey
@@ -120,12 +149,14 @@ Seaking
 Staryu
 Starmie
 Mr-Mime
+Mr-Mime G
 Scyther
 Jynx
 Electabuzz
 Magmar
 Pinsir
 Tauros
+PaldeanTauros
 Magikarp
 Gyarados
 Lapras
@@ -142,11 +173,14 @@ Kabutops
 Aerodactyl
 Snorlax
 Articuno
+Articuno G
 Zapdos
+Zapdos G
 Moltres
+Moltres G
 Dratini
-Dragonair
-Dragonite
+air
+ite
 Mewtwo
 Mew
 Chikorita
@@ -155,6 +189,7 @@ Meganium
 Cyndaquil
 Quilava
 Typhlosion
+Typhlosion H
 Totodile
 Croconaw
 Feraligatr
@@ -192,11 +227,12 @@ Sunkern
 Sunflora
 Yanma
 Wooper
+PaldeanWooper
 Quagsire
 Espeon
 Umbreon
 Murkrow
-Slowking
+Slowking G
 Misdreavus
 Unown
 Wobbuffet
@@ -209,17 +245,19 @@ Steelix
 Snubbull
 Granbull
 Qwilfish
+Qwilfish H
 Scizor
 Shuckle
 Heracross
 Sneasel
+Sneasel H
 Teddiursa
 Ursaring
 Slugma
 Magcargo
 Swinub
 Piloswine
-Corsola
+Corsola G
 Remoraid
 Octillery
 Delibird
@@ -230,7 +268,7 @@ Houndoom
 Kingdra
 Phanpy
 Donphan
-Porygon2
+Porygon
 Stantler
 Smeargle
 Tyrogue
@@ -261,7 +299,9 @@ Swampert
 Poochyena
 Mightyena
 Zigzagoon
+Zigzagoon G
 Linoone
+Linoone G
 Wurmple
 Silcoon
 Beautifly
@@ -307,7 +347,7 @@ Aggron
 Meditite
 Medicham
 Electrike
-Manectric
+Manectrlectric
 Plusle
 Minun
 Volbeat
@@ -335,7 +375,7 @@ Altaria
 Zangoose
 Seviper
 Lunatone
-Solrock
+Sol
 Barboach
 Whiscash
 Corphish
@@ -374,9 +414,9 @@ Salamence
 Beldum
 Metang
 Metagross
-Regirock
-Regice
-Registeel
+Regi
+Reg
+Regi
 Latias
 Latios
 Kyogre
@@ -488,7 +528,7 @@ Giratina
 Cresselia
 Phione
 Manaphy
-Darkrai
+rai
 Shaymin
 Arceus
 Victini
@@ -501,6 +541,7 @@ Emboar
 Oshawott
 Dewott
 Samurott
+Samurott H
 Patrat
 Watchog
 Lillipup
@@ -547,12 +588,15 @@ Cottonee
 Whimsicott
 Petilil
 Lilligant
+Lilligant H
 Basculin
 Sandile
 Krokorok
 Krookodile
 Darumaka
+Darumaka G
 Darmanitan
+Darmanitan G
 Maractus
 Dwebble
 Crustle
@@ -560,6 +604,7 @@ Scraggy
 Scrafty
 Sigilyph
 Yamask
+Yamask G
 Cofagrigus
 Tirtouga
 Carracosta
@@ -568,7 +613,9 @@ Archeops
 Trubbish
 Garbodor
 Zorua
+Zorua H
 Zoroark
+Zoroark H
 Minccino
 Cinccino
 Gothita
@@ -590,7 +637,7 @@ Escavalier
 Foongus
 Amoonguss
 Frillish
-Jellicent
+Jellnt
 Alomomola
 Joltik
 Galvantula
@@ -626,6 +673,7 @@ Bisharp
 Bouffalant
 Rufflet
 Braviary
+Braviary H
 Vullaby
 Mandibuzz
 Heatmor
@@ -661,12 +709,12 @@ Diggersby
 Fletchling
 Fletchinder
 Talonflame
-Scatterbug
+Scatter
 Spewpa
 Vivillon
 Litleo
 Pyroar
-Flabébé
+Flabebe
 Floette
 Florges
 Skiddo
@@ -703,7 +751,9 @@ Dedenne
 Carbink
 Goomy
 Sliggoo
+Sliggoo H
 Goodra
+Goodra H
 Klefki
 Phantump
 Trevenant
@@ -711,6 +761,7 @@ Pumpkaboo
 Gourgeist
 Bergmite
 Avalugg
+Avalugg H
 Noibat
 Noivern
 Xerneas
@@ -722,6 +773,7 @@ Volcanion
 Rowlet
 Dartrix
 Decidueye
+Decidueye H
 Litten
 Torracat
 Incineroar
@@ -734,7 +786,7 @@ Toucannon
 Yungoos
 Gumshoos
 Grubbin
-Charjabug
+Charja
 Vikavolt
 Crabrawler
 Crabominable
@@ -769,7 +821,7 @@ Golisopod
 Sandygast
 Palossand
 Pyukumuku
-Type: Null
+Type-Null
 Silvally
 Minior
 Komala
@@ -794,7 +846,7 @@ Nihilego
 Buzzwole
 Pheromosa
 Xurkitree
-Celesteela
+Celeasteel
 Kartana
 Guzzlord
 Necrozma
@@ -862,8 +914,8 @@ Grimmsnarl
 Obstagoon
 Perrserker
 Cursola
-Sirfetch’d
-Mr. Rime
+Sirfetchd
+Mr-Rime
 Runerigus
 Milcery
 Alcremie
@@ -914,94 +966,95 @@ Quaxwell
 Quaquaval
 Lechonk
 Oinkologne
-Dudunsparce
 Tarountula
 Spidops
 Nymble
 Lokix
-Rellor
-Rabsca
-Greavard
-Houndstone
-Flittle
-Espathra
-Farigiraf
-Wiglett
-Wugtrio
-Dondozo
-Veluza
-Finizen
-Palafin
-Smoliv
-Dolliv
-Arboliva
-Capsakid
-Scovillain
-Tadbulb
-Bellibolt
-Varoom
-Revaroom
-Orthworm
-Tandemaus
-Maushold
-Cetoddle
-Cetitan
-Frigibax
-Arctibax
-Tatsugiri
-Cyclizar
 Pawmi
 Pawmo
 Pawmot
-Wattrel
-Kilowattrel
-Bombirdier
+Tandemaus
+Maushold
+Fidough
+Dachsbun
+Smoliv
+Dolliv
+Arboliva
 Squawkabilly
-Flamigo
-Klawf
 Nacli
 Naclstack
 Garganacl
-Glimmet
-Glimmora
-Shroodle
-Grafaiai
-Fidough
-Dachsbun
-Maschiff
-Mabosstiff
-Bramblin
-Brambleghast
-Gimmighoul
-Gholdengo
-Great-tusk
-Brute-bonnet
-Sandy-shocks
-Scream-tail
-Flutter-mane
-Slither-wing
-Roaring-moon
-Iron-treads
-Iron-moth
-Iron-hands
-Iron-jugulis
-Iron-thorns
-Iron-bundle
-Iron-valiant
-Ting-lu
-Chien-pao
-Wo-chien
-Chi-yu
-Koraidon
-Miraidon
-Tinkatink
-Tinkatuff
-Tinkaton
 Charcadet
 Armarouge
 Ceruledge
+Tadbulb
+Bellibolt
+Wattrel
+Kilowattrel
+Maschiff
+Mabosstiff
+Shroodle
+Grafaiai
+Bramblin
+Brambleghast
 Toedscool
-Toedscreul
-Kingambit
-Clodsire
+Toedscruel
+Klawf
+Capsakid
+Scovillain
+Rellor
+Rabsca
+Flittle
+Espathra
+Tinkatink
+Tinkatuff
+Tinkaton
+Wiglett
+Wugtrio
+Bombirdier
+Finizen
+Palafin
+Varoom
+Revavroom
+Cyclizar
+Orthworm
+Glimmet
+Glimmora
+Greavard
+Houndstone
+Flamigo
+Cetoddle
+Cetitan
+Veluza
+Dondozo
+Tatsugiri
 Annihilape
+Clodsire
+Farigiraf
+Dudunsparce
+Kingambit
+Great-tusk
+Scream-tail
+Brute-bonnet
+Flutter-mane
+Slither-wing
+Sandy-shocks
+Iron-treads
+Iron-bundle
+Iron-hands
+Iron-jugulis
+Iron-moth
+Iron-thorns
+Frigibax
+Arctibax
+Baxcalibur
+Gimmighoul
+Gholdengo
+Wo-chien
+Chien-pao
+Ting-lu
+Chi-yu
+Roaring-moon
+Iron-valiant
+Koraidon
+Miraidon

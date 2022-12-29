@@ -142,12 +142,18 @@ namespace Pokemon_Battle_Sim__Console_
         }
         public static List<int> GetBaseStats(string PKMN)
         {
+            int div = 1;
+            string[] regionalCheck = PKMN.Split(" ");
+            if(regionalCheck.Contains("A") || regionalCheck.Contains("G") || regionalCheck.Contains("H") || regionalCheck.Contains("P"))
+            {
+                div++;
+            }
             string baseurl = "https://pokemondb.net/pokedex/";
-            string url = baseurl + PKMN.ToLower();
+            string url = baseurl + regionalCheck[0].ToLower();
             List<int> BaseStats = new List<int>();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var nodes = doc.DocumentNode.SelectNodes("/html/body/main/div[2]/div[2]/div/div[2]/div[1]/div[2]/table/tbody/tr[position()>0]");
+            var nodes = doc.DocumentNode.SelectNodes($"/html/body/main/div[2]/div[2]/div[{div}]/div[2]/div[1]/div[2]/table/tbody/tr[position()>0]");
 
             foreach (var node in nodes)
             {
@@ -161,22 +167,34 @@ namespace Pokemon_Battle_Sim__Console_
 
         public static string GetType1Name(string PKMN)
         {
+            int div = 1;
+            string[] regionalCheck = PKMN.Split(" ");
+            if (regionalCheck.Contains("A") || regionalCheck.Contains("G") || regionalCheck.Contains("H") || regionalCheck.Contains("P"))
+            {
+                div++;
+            }
             string baseurl = "https://pokemondb.net/pokedex/";
-            string url = baseurl + PKMN.ToLower();
+            string url = baseurl + regionalCheck[0].ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td/a[1]");
+            var node = doc.DocumentNode.SelectSingleNode($"/html/body/main/div[2]/div[2]/div[{div}]/div[1]/div[2]/table/tbody/tr[2]/td/a[1]");
             string TypeName = node.InnerText.ToString();
             return TypeName;
         }
 
         public static string GetType2Name(string PKMN)
         {
+            int div = 1;
+            string[] regionalCheck = PKMN.Split(" ");
+            if (regionalCheck.Contains("A") || regionalCheck.Contains("G") || regionalCheck.Contains("H") || regionalCheck.Contains("P"))
+            {
+                div++;
+            }
             string baseurl = "https://pokemondb.net/pokedex/";
-            string url = baseurl + PKMN.ToLower();
+            string url = baseurl + regionalCheck[0].ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td/a[2]");
+            var node = doc.DocumentNode.SelectSingleNode($"/html/body/main/div[2]/div[2]/div[{div}]/div[1]/div[2]/table/tbody/tr[2]/td/a[2]");
             if (node != null)
             {
                 string TypeName = node.InnerText.ToString();
@@ -232,8 +250,9 @@ namespace Pokemon_Battle_Sim__Console_
         public static string GetDexNum(string PKMN)
         {
             Functions fn = new Functions();
+            string[] regionalCheck = PKMN.Split(" ");
             string baseurl = "https://pokemondb.net/pokedex/";
-            string url = baseurl + PKMN.ToLower();
+            string url = baseurl + regionalCheck[0].ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
             var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[1]/td/strong");
@@ -244,8 +263,9 @@ namespace Pokemon_Battle_Sim__Console_
         public static Pokemon GetPokemon(string PKMN)
         {
             Functions fn = new Functions();
+            string[] regionalCheck = PKMN.Split(" ");
             string baseurl = "https://pokemondb.net/pokedex/";
-            string url = baseurl + PKMN.ToLower();
+            string url = baseurl + regionalCheck[0].ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
             var node = doc.DocumentNode.SelectSingleNode("/html/body/main/h1");
@@ -259,7 +279,26 @@ namespace Pokemon_Battle_Sim__Console_
             PType T2 = fn.FindType(GetType2Name(PKMN));
             int[] B = GetBaseStats(PKMN).ToArray();
 
-            return new Pokemon(PKMN, T1, T2, B);
+            string regionalName = "";
+            if(regionalCheck.Length > 1)
+            {
+                switch (regionalCheck[1])
+                {
+                    case "A":
+                        regionalName = "Alolan";
+                        break;
+                    case "G":
+                        regionalName = "Galarian";
+                        break;
+                    case "H":
+                        regionalName = "Hisuian";
+                        break;
+                    case "P":
+                        regionalName = "Paldean";
+                        break;
+                }
+            }
+            return new Pokemon( $"{regionalName} {regionalCheck[0]}", T1, T2, B);
 
         }
     }

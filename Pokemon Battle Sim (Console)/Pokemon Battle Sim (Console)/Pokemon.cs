@@ -32,8 +32,19 @@ namespace Pokemon_Battle_Sim__Console_
             Type1 = T1;
             Type2 = T2;
             BaseStats = B;
-            ImageRef = WebScraper.GetPokemonImageRef(Name);
-            DexNum = WebScraper.GetDexNum(Name);
+
+            string[] regionalCheck = Name.Split(" ");
+            if(regionalCheck.Length > 1)
+            {
+                ImageRef = WebScraper.GetPokemonImageRef(regionalCheck[1]);
+                DexNum = WebScraper.GetDexNum(regionalCheck[1]);
+            }
+            else
+            {
+                ImageRef = WebScraper.GetPokemonImageRef(Name);
+                DexNum = WebScraper.GetDexNum(Name);
+            }
+            
         }
 
         public void AddMove(string MoveName)
@@ -59,6 +70,11 @@ namespace Pokemon_Battle_Sim__Console_
         public int[] ReturnBaseStats()
         {
             return BaseStats;
+        }
+
+        public string ReturnDexNum()
+        {
+            return DexNum;
         }
 
         public void UpdateIVs(int index, int value)

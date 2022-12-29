@@ -11,15 +11,20 @@ class Program
     static void Main(string[] args)
     {
         fn.GenTypes();
+        WriteToFile();
+    }
+
+    public static void WriteToFile()
+    {
         var lines = File.ReadLines("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonNames.txt");
-        StreamWriter writer = new StreamWriter("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonBaseStats.txt");
+        StreamWriter writer = new StreamWriter("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonClassData.txt");
         foreach (var line in lines)
         {
             Console.WriteLine(line);
             Pokemon temp = WebScraper.GetPokemon(line);
-            
-            writer.WriteLine($"|{temp.ReturnName()}|{temp.ReturnType1().ReturnName()}|{(temp.ReturnType2() != null ? temp.ReturnType2().ReturnName() : " ")}|{temp.ReturnBaseStats()[0]}|{temp.ReturnBaseStats()[1]}|{temp.ReturnBaseStats()[2]}|{temp.ReturnBaseStats()[3]}|{temp.ReturnBaseStats()[4]}|{temp.ReturnBaseStats()[5]}|");
-            
+
+            writer.WriteLine($"|{temp.ReturnDexNum()}|{temp.ReturnName()}|{temp.ReturnType1().ReturnName()}|{(temp.ReturnType2() != null ? temp.ReturnType2().ReturnName() : " ")}|{temp.ReturnBaseStats()[0]}|{temp.ReturnBaseStats()[1]}|{temp.ReturnBaseStats()[2]}|{temp.ReturnBaseStats()[3]}|{temp.ReturnBaseStats()[4]}|{temp.ReturnBaseStats()[5]}|");
+
         }
         writer.Close();
     }
