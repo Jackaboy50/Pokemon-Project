@@ -2,6 +2,7 @@
 using HtmlAgilityPack;
 using System.Collections.Generic;
 using Pokemon_Battle_Sim__Console_;
+using System.IO;
 
 class Program
 {
@@ -10,7 +11,17 @@ class Program
     static void Main(string[] args)
     {
         fn.GenTypes();
-        CreateRandomTeam();
+        var lines = File.ReadLines("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonNames.txt");
+        StreamWriter writer = new StreamWriter("D:\\jackt\\Documents\\Pokemon-Project\\Pokemon Battle Sim (Console)\\Pokemon Battle Sim (Console)\\PokemonBaseStats.txt");
+        foreach (var line in lines)
+        {
+            Console.WriteLine(line);
+            Pokemon temp = WebScraper.GetPokemon(line);
+            
+            writer.WriteLine($"|{temp.ReturnName()}|{temp.ReturnType1().ReturnName()}|{(temp.ReturnType2() != null ? temp.ReturnType2().ReturnName() : " ")}|{temp.ReturnBaseStats()[0]}|{temp.ReturnBaseStats()[1]}|{temp.ReturnBaseStats()[2]}|{temp.ReturnBaseStats()[3]}|{temp.ReturnBaseStats()[4]}|{temp.ReturnBaseStats()[5]}|");
+            
+        }
+        writer.Close();
     }
     public static void CreateRandomTeam()
     {

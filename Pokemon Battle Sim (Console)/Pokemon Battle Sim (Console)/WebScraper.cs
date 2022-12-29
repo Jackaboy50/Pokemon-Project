@@ -147,7 +147,7 @@ namespace Pokemon_Battle_Sim__Console_
             List<int> BaseStats = new List<int>();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var nodes = doc.DocumentNode.SelectNodes("/html/body/main/div[3]/div[2]/div/div[2]/div[1]/div[2]/table/tbody/tr[position()>0]");
+            var nodes = doc.DocumentNode.SelectNodes("/html/body/main/div[2]/div[2]/div/div[2]/div[1]/div[2]/table/tbody/tr[position()>0]");
 
             foreach (var node in nodes)
             {
@@ -165,7 +165,7 @@ namespace Pokemon_Battle_Sim__Console_
             string url = baseurl + PKMN.ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[3]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td/a[1]");
+            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td/a[1]");
             string TypeName = node.InnerText.ToString();
             return TypeName;
         }
@@ -176,7 +176,7 @@ namespace Pokemon_Battle_Sim__Console_
             string url = baseurl + PKMN.ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[3]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td/a[2]");
+            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[2]/td/a[2]");
             if (node != null)
             {
                 string TypeName = node.InnerText.ToString();
@@ -236,7 +236,7 @@ namespace Pokemon_Battle_Sim__Console_
             string url = baseurl + PKMN.ToLower();
             HtmlWeb web = new HtmlWeb();
             var doc = web.Load(url);
-            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[3]/div[2]/div/div[1]/div[2]/table/tbody/tr[1]/td/strong");
+            var node = doc.DocumentNode.SelectSingleNode("/html/body/main/div[2]/div[2]/div/div[1]/div[2]/table/tbody/tr[1]/td/strong");
             string dexnum = node.InnerText;
             return dexnum;
         }
