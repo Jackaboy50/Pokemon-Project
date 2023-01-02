@@ -18,7 +18,7 @@ namespace Pokemon_Battle_Sim__Console_
         public bool Paralysed = false;
         public bool Confused = false;
         public bool Asleep = false;
-        public ActivePokemon(string n, string nm, string g, int l, bool s, Item i, int[] b, int[] iv, int[] ev, PType T1, PType T2, string N, List<Move> M) : base(n, T1, T2, b)
+        public ActivePokemon(string n, string nm, string g, int l, bool s, Item i, int[] b, List<string> pm, int[] iv, int[] ev, PType T1, PType T2, string N, List<Move> M) : base(n, T1, T2, b, pm)
         {
             Nickname = nm;
             Gender = g;

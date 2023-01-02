@@ -119,7 +119,7 @@ namespace Pokemon_Battle_Sim__Console_
 
             }
 
-            Pokemon p = new Pokemon(Name, T1, T2, B);
+            Pokemon p = new Pokemon(Name, T1, T2, B, new List<string>()); //empty list for moveset sort later
             p.Nickname = Nickname;
             p.Gender = Gender;
             p.Helditem = Item;
@@ -520,7 +520,7 @@ namespace Pokemon_Battle_Sim__Console_
         }
         public ActivePokemon ConvertToActive(Pokemon P)
         {
-            return new ActivePokemon(P.ReturnName(), P.Nickname, P.Gender, P.Level, P.Shiny, P.Helditem, P.ReturnBaseStats(), P.IV, P.EV, P.ReturnType1(), P.ReturnType2(), P.Nature, P.Moveset);
+            return new ActivePokemon(P.ReturnName(), P.Nickname, P.Gender, P.Level, P.Shiny, P.Helditem, P.ReturnBaseStats(), P.ReturnMoveList(), P.IV, P.EV, P.ReturnType1(), P.ReturnType2(), P.Nature, P.Moveset);
         }
 
         public Team ImportTeam(string[] Team)
@@ -614,7 +614,7 @@ namespace Pokemon_Battle_Sim__Console_
                     break;
                 }
             }
-            Pokemon p = new Pokemon(Name, T1, T2, B);
+            Pokemon p = new Pokemon(Name, T1, T2, B, new List<string>()); //list string for moveset sort later
             p.Nickname = Nickname;
             p.Gender = Gender;
             p.Helditem = Item;

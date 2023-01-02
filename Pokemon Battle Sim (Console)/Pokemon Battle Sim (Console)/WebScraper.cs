@@ -165,6 +165,87 @@ namespace Pokemon_Battle_Sim__Console_
             return BaseStats;
         }
 
+        public static List<string> GetPossibleMoves(string PKMN)
+        {
+            int div = 1;
+            string[] regionalCheck = PKMN.Split(" ");
+            if (regionalCheck.Contains("A") || regionalCheck.Contains("G") || regionalCheck.Contains("H") || regionalCheck.Contains("P"))
+            {
+                div++;
+            }
+            string baseurl = "https://pokemondb.net/pokedex/";
+            string url = baseurl + regionalCheck[0].ToLower();
+            List<string> possibleMoves = new List<string>();
+            HtmlWeb web = new HtmlWeb();
+            var doc = web.Load(url);
+            var tables = doc.DocumentNode.SelectNodes("//table[position()>0][@class=\"data-table\"]");
+            int counter = 0;
+            int index = 2;
+            Functions fn = new Functions();
+            HtmlNodeCollection cells;
+            foreach (HtmlNode dataTable in tables)
+            {
+                cells = dataTable.SelectNodes($".//tr/td[2]");
+                if (int.TryParse(cells[0].InnerText, out _) || fn.FindType(cells[0].InnerText) != null)
+                {
+                    cells = dataTable.SelectNodes($".//tr/td[1]");
+                }
+
+                foreach (HtmlNode cell in cells)
+                {
+                    if (!possibleMoves.Contains(cell.InnerText))
+                    {
+                        possibleMoves.Add(cell.InnerText);
+                    }
+                }
+            }
+            return possibleMoves;
+        }
+
+        public static List<string> GetPossibleMovesRegionalTest(string PKMN)
+        {
+            int div = 1;
+            bool regional = false;
+            bool toggleMask = false;
+            string[] regionalCheck = PKMN.Split(" ");
+            if (regionalCheck.Contains("A") || regionalCheck.Contains("G") || regionalCheck.Contains("H") || regionalCheck.Contains("P"))
+            {
+                div++;
+                regional = true;
+            }
+            string baseurl = "https://pokemondb.net/pokedex/";
+            string url = baseurl + regionalCheck[0].ToLower();
+            List<string> possibleMoves = new List<string>();
+            HtmlWeb web = new HtmlWeb();
+            var doc = web.Load(url);
+            HtmlNodeCollection tables = doc.DocumentNode.SelectNodes("//table[position()>0][@class=\"data-table\"]");
+            int counter = 0;
+            Functions fn = new Functions();
+            HtmlNodeCollection cells;
+            foreach (HtmlNode dataTable in tables)
+            {
+                if (regional == toggleMask && counter < tables.Count / 2 - 1)
+                {
+                    cells = dataTable.SelectNodes($".//tr/td[2]");
+                    if (int.TryParse(cells[0].InnerText, out _) || fn.FindType(cells[0].InnerText) != null)
+                    {
+                        cells = dataTable.SelectNodes($".//tr/td[1]");
+                    }
+
+                    foreach (HtmlNode cell in cells)
+                    {
+                        if (!possibleMoves.Contains(cell.InnerText))
+                        {
+                            possibleMoves.Add(cell.InnerText);
+                        }
+                    }
+                    counter++;
+                }
+                toggleMask = !toggleMask;
+            }
+            return possibleMoves;
+        }
+
         public static string GetType1Name(string PKMN)
         {
             int div = 1;
@@ -277,6 +358,7 @@ namespace Pokemon_Battle_Sim__Console_
             PType T1 = fn.FindType(GetType1Name(PKMN));
             PType T2 = fn.FindType(GetType2Name(PKMN));
             int[] B = GetBaseStats(PKMN).ToArray();
+            List<string> PM = GetPossibleMoves(PKMN);
 
             string regionalName = "";
             if(regionalCheck.Length > 1)
@@ -297,7 +379,7 @@ namespace Pokemon_Battle_Sim__Console_
                         break;
                 }
             }
-            return new Pokemon( $"{regionalName} {regionalCheck[0]}", T1, T2, B);
+            return new Pokemon( $"{regionalName} {regionalCheck[0]}", T1, T2, B, PM);
 
         }
     }

@@ -11,9 +11,11 @@ class Program
 {
     public static Functions fn = new Functions();
     public static Random Rand = new Random();
+    public static List<Pokemon> allPokemon;
     static void Main(string[] args)
     {
         fn.GenTypes();
+        WritePokemonToJsonFile();
     }
 
     public static void WriteToTxtFile()
@@ -52,79 +54,9 @@ class Program
         }
         File.WriteAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\MoveClassData.json", JsonConvert.SerializeObject(allMoves, Formatting.Indented));
     }
-    public static void CreateRandomTeam()
+
+    public static void LoadJsonClassData()
     {
-        Pokemon Stun = WebScraper.GetPokemon("StunFisk");
-        Stun.Nickname = "Fisk";
-        Stun.Nature = "Bold";
-        Stun.AddMove("Iron Tail");
-        Stun.AddMove("Body Slam");
-        Stun.AddMove("Discharge");
-        Stun.AddMove("Tackle");
-        Stun.Shiny = true;
-        Stun.Level = 50;
-        Stun.Gender = "M";
-
-        Pokemon Pawniard = WebScraper.GetPokemon("Pawniard");
-        Pawniard.Nickname = "Pawn";
-        Pawniard.Nature = "Adamant";
-        Pawniard.AddMove("Dark pulse");
-        Pawniard.AddMove("Night slash");
-        Pawniard.AddMove("Tackle");
-        Pawniard.AddMove("Swords dance");
-        Pawniard.Shiny = false;
-        Pawniard.Level = 100;
-
-        Pokemon Alc = WebScraper.GetPokemon("Alcremie");
-        Alc.Nickname = "Alc";
-        Alc.Nature = "Timid";
-        Alc.AddMove("Dazzling Gleam");
-        Alc.AddMove("Fairy wind");
-        Alc.AddMove("Mystical fire");
-        Alc.AddMove("Slash");
-        Alc.Shiny = true;
-        Alc.Level = 20;
-        Alc.Gender = "F";
-
-        Pokemon Deox = WebScraper.GetPokemon("Deoxys");
-        Deox.Nickname = "Deox";
-        Deox.Nature = "Adamant";
-        Deox.AddMove("Dazzling Gleam");
-        Deox.AddMove("Extreme speed");
-        Deox.AddMove("Hammer arm");
-        Deox.AddMove("psychic");
-        Deox.Shiny = true;
-        Deox.Level = 47;
-        Deox.Gender = "F";
-
-        Pokemon Tep = WebScraper.GetPokemon("Tepig");
-        Tep.Nickname = "Tep";
-        Tep.Nature = "Adamant";
-        Tep.AddMove("Quick attack");
-        Tep.AddMove("Hammer arm");
-        Tep.AddMove("Tackle");
-        Tep.AddMove("Ember");
-        Tep.Shiny = true;
-        Tep.Level = 10;
-        Tep.Gender = "M";
-
-        Pokemon Char = WebScraper.GetPokemon("Charizard");
-        Char.Nickname = "Char";
-        Char.Nature = "Adamant";
-        Char.AddMove("Quick attack");
-        Char.AddMove("Dark pulse");
-        Char.AddMove("Fly");
-        Char.AddMove("Ember");
-        Char.Shiny = true;
-        Char.Level = 90;
-        Char.Gender = "M";
-
-        Team T = new Team("Random Pokemon");
-        T.SetList(new Pokemon[] { Pawniard, Stun, Alc, Deox, Tep, Char });
-        string[] Export = fn.ExportTeam(T);
-        foreach (string s in Export)
-        {
-            Console.WriteLine(s);
-        }
+        allPokemon = JsonConvert.DeserializeObject<List<Pokemon>>(File.ReadAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\PokemonClassData.json"));
     }
 }

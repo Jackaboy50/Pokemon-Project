@@ -30,8 +30,9 @@ namespace Pokemon_Battle_Sim__Console_
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.Ignore)] protected string Type2Name;
         [JsonIgnore] public string Nature;
         [JsonIgnore] public List<Move> Moveset = new List<Move>();
+        [JsonRequired] private List<string> possibleMoves = new List<string>();
 
-        public Pokemon(string n, PType T1, PType T2, int[] B)
+        public Pokemon(string n, PType T1, PType T2, int[] B, List<string> PM)
         {
             Name = n;
             Type1 = T1;
@@ -39,6 +40,7 @@ namespace Pokemon_Battle_Sim__Console_
             Type2 = T2;
             Type2Name = T2 != null ? T2.ReturnName() : string.Empty;
             BaseStats = B;
+            possibleMoves = PM;
 
             string[] regionalCheck = Name.Split(" ");
             if(regionalCheck.Length > 1)
@@ -63,6 +65,11 @@ namespace Pokemon_Battle_Sim__Console_
         {
             Type1 = fn.FindType(Type1Name);
             Type2 = Type2Name != null ? fn.FindType(Type2Name) : null;
+        }
+
+        public List<string> ReturnMoveList()
+        {
+            return possibleMoves;
         }
 
         public void AddMove(string MoveName)
