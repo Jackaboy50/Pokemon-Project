@@ -284,6 +284,54 @@ namespace Pokemon_Battle_Sim__Console_
             return "Pokemon has no Second Type";
         }
 
+        public static Ability[] GetAbilities()
+        {
+            string url = "https://pokemondb.net/ability";
+            HtmlWeb web = new HtmlWeb();
+            var doc = web.Load(url);
+            var cells = doc.DocumentNode.SelectNodes($"/html/body/main/div[2]/div[2]/div[2]/table/tbody/tr[position()>0]");
+            List<Ability> abilities = new List<Ability>();
+            foreach (HtmlNode cell in cells)
+            {
+                string text = cell.InnerText;
+                text = text.Remove(0, 1);
+                string name = "";
+                foreach (char c in text)
+                {
+                    if (char.IsLetter(c) || c == ' ')
+                    {
+                        name += c;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                text = text.Remove(0, name.Length);
+                string info = "";
+                bool start = false;
+                foreach (char c in text)
+                {
+                    if (start)
+                    {
+                        if (c == '.')
+                        {
+                            break;
+                        }
+                        info += c;
+                        continue;
+                    }
+                    else if (char.IsUpper(c))
+                    {
+                        info += c;
+                        start = true;
+                    }
+                }
+                abilities.Add(new Ability(name, info));
+            }
+            return abilities.ToArray();
+        }
+
         public static Move GetMove(string move)
         {
             Functions fn = new Functions();

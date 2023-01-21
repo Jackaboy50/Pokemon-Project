@@ -14,8 +14,8 @@ class Program
     public static List<Pokemon> allPokemon;
     static void Main(string[] args)
     {
-        fn.GenTypes();
-        WritePokemonToJsonFile();
+        //fn.GenTypes();
+        //WritePokemonToJsonFile();
     }
 
     public static void WriteToTxtFile()
@@ -53,6 +53,11 @@ class Program
             allMoves.Add(WebScraper.GetMove(line));
         }
         File.WriteAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\MoveClassData.json", JsonConvert.SerializeObject(allMoves, Formatting.Indented));
+    }
+
+    public static void WriteAbilitiesToJsonFile()
+    {
+        File.WriteAllText(@"D:\jackt\Documents\Pokemon-Project\Pokemon Battle Sim (Console)\Pokemon Battle Sim (Console)\PokemonAbilityData.json", JsonConvert.SerializeObject(WebScraper.GetAbilities(), Formatting.Indented));
     }
 
     public static void LoadJsonClassData()

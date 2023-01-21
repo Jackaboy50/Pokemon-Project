@@ -72,7 +72,7 @@ namespace Pokemon_Battle_Sim__Console_
             string ItemName = Pokemon[0].Substring(Pokemon[0].IndexOf("@") + 1, Pokemon[0].Length - Pokemon[0].IndexOf("@") - 1);
             Item Item = new Item(ItemName, "...", 0.5f);
             string AbilityName = (Pokemon[1].Substring(Pokemon[1].IndexOf(":") + 2));
-            Ability Ability = new Ability(AbilityName, "...", 1);
+            Ability Ability = new Ability(AbilityName, "...");
             int Level;
             if (Int32.TryParse(Pokemon[2].Substring(Pokemon[2].IndexOf(":") + 1).Trim(), out Level) == false)
             {
@@ -568,7 +568,7 @@ namespace Pokemon_Battle_Sim__Console_
             string ItemName = Pokemon[0].Substring(Pokemon[0].IndexOf("@") + 1, Pokemon[0].Length - Pokemon[0].IndexOf("@") - 1);
             Item Item = new Item(ItemName, "...", 0.5f);
             string AbilityName = (Pokemon[1].Substring(Pokemon[1].IndexOf(":") + 2));
-            Ability Ability = new Ability(AbilityName, "...", 1);
+            Ability Ability = new Ability(AbilityName, "...");
             int Level = int.Parse(Pokemon[2].Substring(Pokemon[2].IndexOf(":") + 1).Trim());
             string temp = Pokemon[3];
             int SpeEV = int.Parse(temp.Substring(temp.LastIndexOf("/") + 5).Trim());
